@@ -1,0 +1,75 @@
+﻿<Window x:Class="ProjectionSccen.Core.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:ProjectionSccen.Core.View"
+        xmlns:pageView="clr-namespace:ProjectionSccen.Core.ViewPage"
+        xmlns:viewModel="clr-namespace:ProjectionSccen.Core.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1050" Width="800" x:Name="mainWindow" viewModel:DialogCloser.DialogResult="{Binding DialogResult}"
+        AllowsTransparency="True" BorderThickness="0"  WindowStartupLocation="CenterScreen" WindowState="Maximized"  WindowStyle="None">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModel:TwoPeopleViewModel}">
+            <pageView:TwoPeople />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:FourPeopleViewModel}">
+            <pageView:FourPeople />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:TenPeopleViewModel}">
+            <pageView:TenPeople />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:TwentyPeopleViewModel}">
+            <pageView:TwentyPeople />
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type viewModel:FivetyPeopleViewModel}">
+            <pageView:FivetyPeople />
+        </DataTemplate>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Command="{Binding EscClickCommand}" Gesture="ESC" />
+    </Window.InputBindings>
+    <Grid Margin="2,2,2,2">
+        <Grid.Background>
+            <ImageBrush ImageSource="{Binding MainWindowBackGround}" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="12*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="16*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"></ColumnDefinition>
+            <ColumnDefinition Width="46*"></ColumnDefinition>
+            <ColumnDefinition Width="27* "></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource '阿里巴巴普惠体 R'}"
+                   FontSize="{Binding TitleFontLength }" Foreground="White" Text="{Binding GameTitle}" ></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource DS-Digital}" FontSize="128.67" Foreground="White" Text="{Binding CurrentDateTime}" />
+        <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="2,0,0,0">
+            <DockPanel LastChildFill="True">
+                <ContentControl x:Name="content" Background="Transparent" Content="{Binding ViewModelContent}"></ContentControl>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45*"></ColumnDefinition>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="45*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button  Margin="2,2,2,2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/data.png" Stretch="Uniform" ></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button Grid.Column="2" Margin="2,2,2,2" Command="{Binding RankingClickCommand}"  CommandParameter="{Binding ElementName=mainWindow}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/cjzs.png" Stretch="Uniform" />
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

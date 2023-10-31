@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionSccen.Core", "ProjectionSccen.Core\ProjectionSccen.Core.csproj", "{3AE21A7E-6060-4B1E-9910-B98E28537BFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AE21A7E-6060-4B1E-9910-B98E28537BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE21A7E-6060-4B1E-9910-B98E28537BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE21A7E-6060-4B1E-9910-B98E28537BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE21A7E-6060-4B1E-9910-B98E28537BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
