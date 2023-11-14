@@ -200,6 +200,7 @@ public class MainWindowViewModel : ViewModelBase
         this.SetView(new TwentyPeopleViewModel(), typeof(TwentyPeople));
         this.SetView(new FivetyPeopleViewModel(), typeof(FivetyPeople));
         EscClickCommand = new BaseCommand(obj => EscCurrentData(obj));
+        CloseCommand = new BaseCommand(o => EscCurrentData(o));
         RankingClickCommand = new BaseCommand(obj => RankingCommand(obj));
     }
 
@@ -290,8 +291,6 @@ public class MainWindowViewModel : ViewModelBase
             if (netControllerManager.IsConnection)
             {
                 connnection = netControllerManager.IsConnection;
-                
-                StartListenServerDataCallBack(netControllerManager.RecieveDataFromServer);
                 StartDispather();
                 
             }
@@ -366,23 +365,7 @@ public class MainWindowViewModel : ViewModelBase
 
     }
 
-    private Thread RecieveDataThread;
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="action"></param>
-    private void StartListenServerDataCallBack(Action action)
-    {
-        RecieveDataThread = new Thread(() =>
-        {
-            action?.Invoke();
-        });
-        if (connnection)
-        {
-            RecieveDataThread.IsBackground = true;
-            RecieveDataThread.Start();
-        }
-    }
+    
     /// <summary>
     /// 
     /// </summary>
@@ -393,8 +376,6 @@ public class MainWindowViewModel : ViewModelBase
         {
             var mess = JsonDataManager.Instance.DeserializeObject<ClientMessage>(data);
             HandleServerMessageData(mess);
-           
-
         }
     }
 
@@ -575,6 +556,8 @@ public class MainWindowViewModel : ViewModelBase
     /// </summary>
     private void CloseNetConnection()
     {
+        if (connnection)
+            netControllerManager.CloseNetConnection();
         connnection = false;
     }
 

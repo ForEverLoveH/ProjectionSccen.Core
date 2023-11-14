@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ProjectionSccen.Core.Manager
@@ -85,6 +86,8 @@ namespace ProjectionSccen.Core.Manager
                 mSocket.Connect(iPEndPoint);
                 isConnect = true;
                 DataCallBack?.Invoke("链接到服务器");
+                StartListenServerDataCallBack(RecieveDataFromServer);
+
             }
             catch (Exception ex)
             {
@@ -92,6 +95,23 @@ namespace ProjectionSccen.Core.Manager
             }
         }
 
+        private Thread RecieveDataThread;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="action"></param>
+        private void StartListenServerDataCallBack(Action action)
+        {
+            RecieveDataThread = new Thread(() =>
+            {
+                action?.Invoke();
+            });
+            if (IsConnection)
+            {
+                RecieveDataThread.IsBackground = true;
+                RecieveDataThread.Start();
+            }
+        }
         /// <summary>
         ///
         /// </summary>
@@ -107,7 +127,6 @@ namespace ProjectionSccen.Core.Manager
                     {
                         byte[] buffer = new byte[count];
                         mSocket.Receive(buffer);
-
                         string res = Encoding.UTF8.GetString(buffer);
                         int len = res.Length;
                         if (res.Length > 0)
@@ -117,23 +136,14 @@ namespace ProjectionSccen.Core.Manager
                                 var data = res.Split('#');
                                 if (data.Length > 0)
                                 {
-                                    
                                     for (int i = 0; i < data.Length - 1; i++)
                                     {
                                         var ds = data[i].Split(' ');
-                                        if (ds.Length > 0)
-                                        {
-                                            result = ds[0];
-                                        }
+                                        if (ds.Length > 0) result = ds[0];
                                         if (result.Length > 0)
                                         {
-
-                                            DataCallBack?.Invoke($"接收到服务端数据:{result}" +
-                                                                      DateTime.Now.ToString("yyyy-mmddMM hh:ss"));
+                                            DataCallBack?.Invoke($"接收到服务端数据:{result}" + DateTime.Now.ToString("yyyy-mmddMM hh:ss"));
                                             _HandleRecieveDataCallBack?.Invoke(result);
-
-
-                                            
                                         }
                                     }
                                 }
@@ -154,6 +164,16 @@ namespace ProjectionSccen.Core.Manager
                 string data = JsonDataManager.Instance.SerializeObject<ClientMessage>(message);
                 byte[] buffer = Encoding.UTF8.GetBytes(data);
                 mSocket.Send(buffer, buffer.Length, 0);
+            }
+        }
+
+        public void CloseNetConnection()
+        {
+            if (isConnect)
+            {
+                mSocket. Dispose();
+                mSocket. Close();
+                isConnect = false;
             }
         }
     }

@@ -283,6 +283,26 @@
       <Resource Include="Images\20\x54.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Resources\font\Adobe 黑体 Std.otf" />
+      <Resource Include="Resources\font\Adobe 黑体 Std.otf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\font\DS-DIGIT.TTF" />
+      <Resource Include="Resources\font\DS-DIGIT.TTF">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\font\方正粗黑宋简体.ttf" />
+      <Resource Include="Resources\font\方正粗黑宋简体.ttf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\font\造字工房典黑粗体.otf" />
+      <Resource Include="Resources\font\造字工房典黑粗体.otf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\font\阿里巴巴普惠体 R.TTF" />
+      <Resource Include="Resources\font\阿里巴巴普惠体 R.TTF">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>
