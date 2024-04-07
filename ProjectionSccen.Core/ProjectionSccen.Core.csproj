@@ -2,54 +2,23 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net7.0-windows</TargetFramework>
+        <TargetFramework>net7.0-windows7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="Images\50\b.png" />
-      <None Remove="Images\50\b101.png" />
-      <None Remove="Images\50\b102.png" />
-      <None Remove="Images\50\b103.png" />
-      <None Remove="Images\50\b104.png" />
-      <None Remove="Images\50\b105.png" />
-      <None Remove="Images\50\b11.png" />
-      <None Remove="Images\50\b12.png" />
-      <None Remove="Images\50\b13.png" />
-      <None Remove="Images\50\b14.png" />
-      <None Remove="Images\50\b15.png" />
-      <None Remove="Images\50\b21.png" />
-      <None Remove="Images\50\b22.png" />
-      <None Remove="Images\50\b23.png" />
-      <None Remove="Images\50\b24.png" />
-      <None Remove="Images\50\b25.png" />
-      <None Remove="Images\50\b91.png" />
-      <None Remove="Images\50\b92.png" />
-      <None Remove="Images\50\b93.png" />
-      <None Remove="Images\50\b94.png" />
-      <None Remove="Images\50\b95.png" />
-      <None Remove="Images\50\x.png" />
-      <None Remove="Images\50\x101.png" />
-      <None Remove="Images\50\x102.png" />
-      <None Remove="Images\50\x103.png" />
-      <None Remove="Images\50\x104.png" />
-      <None Remove="Images\50\x105.png" />
-      <None Remove="Images\50\x11.png" />
-      <None Remove="Images\50\x12.png" />
-      <None Remove="Images\50\x13.png" />
-      <None Remove="Images\50\x14.png" />
-      <None Remove="Images\50\x15.png" />
-      <None Remove="Images\50\x21.png" />
-      <None Remove="Images\50\x22.png" />
-      <None Remove="Images\50\x23.png" />
-      <None Remove="Images\50\x24.png" />
-      <None Remove="Images\50\x25.png" />
-      <None Remove="Images\50\x91.png" />
-      <None Remove="Images\50\x92.png" />
-      <None Remove="Images\50\x93.png" />
-      <None Remove="Images\50\x94.png" />
-      <None Remove="Images\50\x95.png" />
+      <Compile Remove="Images\20\**" />
+      <Compile Remove="Images\50\**" />
+      <EmbeddedResource Remove="Images\20\**" />
+      <EmbeddedResource Remove="Images\50\**" />
+      <None Remove="Images\20\**" />
+      <None Remove="Images\50\**" />
+      <Page Remove="Images\20\**" />
+      <Page Remove="Images\50\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <None Remove="Images\b.png" />
       <None Remove="Images\b11.png" />
       <None Remove="Images\b12.png" />
@@ -59,9 +28,84 @@
       <None Remove="Images\background1.png" />
       <None Remove="Images\cjzs.png" />
       <None Remove="Images\data.png" />
-      <None Remove="Images\paimingbiankuang.png" />
+      <None Remove="Images\IMages\x10\已连接背景框.png" />
+      <None Remove="Images\IMages\x10\序号框.png" />
+      <None Remove="Images\IMages\x10\效果图.png" />
+      <None Remove="Images\IMages\x10\未连接背景框.png" />
+      <None Remove="Images\IMages\x10\纯背景.png" />
+      <None Remove="Images\IMages\x10\详细字体&amp;间隔参数说明.jpg" />
+      <None Remove="Images\IMages\x10\顶部两个logo.png" />
+      <None Remove="Images\IMages\x20\实时数据.png" />
+      <None Remove="Images\IMages\x20\成绩展示.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（正面）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第一列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第一列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第一列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第一列第四个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第五列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第五列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第五列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框序号图标（第五列第四个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（正面）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第一列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第一列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第一列第四个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第五列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第五列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第五列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（已连接）（第五列第四个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（正面）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第一列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第一列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第一列第四个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第五列第一个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第五列第三个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第五列第二个）.png" />
+      <None Remove="Images\IMages\x20\排名边框（未连接）（第五列第四个）.png" />
+      <None Remove="Images\IMages\x20\背景（已连接）.png" />
+      <None Remove="Images\IMages\x20\顶部两个logo.png" />
+      <None Remove="Images\IMages\x20\首页（20人）字体说明.jpg" />
+      <None Remove="Images\IMages\x20\首页（20人）预览效果.jpg" />
+      <None Remove="Images\IMages\x2\中部两个logo.png" />
+      <None Remove="Images\IMages\x2\实时数据.png" />
+      <None Remove="Images\IMages\x2\成绩展示.png" />
+      <None Remove="Images\IMages\x2\排名边框序号图标.png" />
+      <None Remove="Images\IMages\x2\排名边框（已连接）.png" />
+      <None Remove="Images\IMages\x2\排名边框（未连接）.png" />
+      <None Remove="Images\IMages\x2\背景（已连接）.png" />
+      <None Remove="Images\IMages\x2\顶部两个logo.png" />
+      <None Remove="Images\IMages\x2\首页（2人）字体说明.jpg" />
+      <None Remove="Images\IMages\x2\首页（2人）预览效果.jpg" />
+      <None Remove="Images\IMages\x4\中部两个logo.png" />
+      <None Remove="Images\IMages\x4\实时数据.png" />
+      <None Remove="Images\IMages\x4\成绩展示.png" />
+      <None Remove="Images\IMages\x4\排名边框序号图标.png" />
+      <None Remove="Images\IMages\x4\排名边框（已连接）.png" />
+      <None Remove="Images\IMages\x4\排名边框（未连接）.png" />
+      <None Remove="Images\IMages\x4\背景（已连接）.png" />
+      <None Remove="Images\IMages\x4\顶部两个logo.png" />
+      <None Remove="Images\IMages\x4\首页（4人）字体说明.png" />
+      <None Remove="Images\IMages\x4\首页（4人）预览效果.jpg" />
+      <None Remove="Images\IMages\x8\成绩展示.png" />
+      <None Remove="Images\IMages\x8\排名边框（已连接）（第一列第一个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（已连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（已连接）（第四列第一个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（已连接）（第四列第二个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（未连接）（正面）.png" />
+      <None Remove="Images\IMages\x8\排名边框（未连接）（第一列第一个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（未连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（未连接）（第四列第一个）.png" />
+      <None Remove="Images\IMages\x8\排名边框（未连接）（第四列第二个）.png" />
+      <None Remove="Images\IMages\x8\背景（已连接）.png" />
+      <None Remove="Images\IMages\x8\顶部两个logo.png" />
       <None Remove="Images\x11.png" />
       <None Remove="Images\x41.png" />
+      <None Remove="Images\纯背景.png" />
+      <None Remove="Resources\font\Adobe 黑体 Std R.otf" />
+      <None Remove="Resources\font\DS-Digital.TTF" />
+      <None Remove="Resources\font\造字工房典黑粗体.OTF" />
       <None Remove="ViewPage\b.png" />
       <None Remove="ViewPage\b104.png" />
       <None Remove="ViewPage\b11.png" />
@@ -75,242 +119,184 @@
       <None Remove="ViewPage\x41.png" />
       <None Remove="ViewPage\x94.png" />
       <None Remove="ViewPage\xuhao.png" />
+      <None Remove="ViewPage\纯背景.png" />
       <None Remove="View\background.png" />
       <None Remove="View\background1.png" />
       <None Remove="View\cjzs.png" />
       <None Remove="View\data.png" />
+      <None Update="Config\Config.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Config\Log4net.Config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Resource Include="Images\50\b.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b101.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b102.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b103.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b105.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b11.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b12.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b13.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b14.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b15.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b21.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b22.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b23.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b24.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b25.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b91.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b92.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b93.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b94.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\b95.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x101.png" />
-      <Resource Include="Images\50\x102.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x103.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x104.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x105.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x11.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x12.png" />
-      <Resource Include="Images\50\x13.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x14.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x15.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x21.png" />
-      <Resource Include="Images\50\x22.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x23.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x24.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x25.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x91.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x92.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x93.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <Resource Include="Images\50\x94.png" />
-      <Resource Include="Images\50\x95.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
       <Resource Include="Images\b.png" />
       <Resource Include="Images\b11.png" />
       <Resource Include="Images\b12.png" />
       <Resource Include="Images\b41.png" />
       <Resource Include="Images\b42.png" />
-      <Resource Include="Images\background.png" />
-      <Resource Include="Images\background1.png" />
-      <Resource Include="Images\paimingbiankuang.png" />
+      <Resource Include="Images\background.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Images\background1.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Images\IMages\x10\已连接背景框.png" />
+      <Resource Include="Images\IMages\x10\序号框.png" />
+      <Resource Include="Images\IMages\x10\效果图.png" />
+      <Resource Include="Images\IMages\x10\未连接背景框.png" />
+      <Resource Include="Images\IMages\x10\纯背景.png" />
+      <Resource Include="Images\IMages\x10\详细字体&amp;间隔参数说明.jpg" />
+      <Resource Include="Images\IMages\x10\顶部两个logo.png" />
+      <Resource Include="Images\IMages\x20\实时数据.png" />
+      <Resource Include="Images\IMages\x20\成绩展示.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（正面）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第一列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第一列第四个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第五列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第五列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第五列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（正面）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第一列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第一列第四个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第五列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第五列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第五列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（已连接）（第五列第四个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（正面）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第一列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第一列第四个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第五列第一个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第五列第三个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第五列第二个）.png" />
+      <Resource Include="Images\IMages\x20\排名边框（未连接）（第五列第四个）.png" />
+      <Resource Include="Images\IMages\x20\背景（已连接）.png" />
+      <Resource Include="Images\IMages\x20\顶部两个logo.png" />
+      <Resource Include="Images\IMages\x20\首页（20人）字体说明.jpg" />
+      <Resource Include="Images\IMages\x20\首页（20人）预览效果.jpg" />
+      <Resource Include="Images\IMages\x2\中部两个logo.png" />
+      <Resource Include="Images\IMages\x2\实时数据.png" />
+      <Resource Include="Images\IMages\x2\成绩展示.png" />
+      <Resource Include="Images\IMages\x2\排名边框序号图标.png" />
+      <Resource Include="Images\IMages\x2\排名边框（已连接）.png" />
+      <Resource Include="Images\IMages\x2\排名边框（未连接）.png" />
+      <Resource Include="Images\IMages\x2\背景（已连接）.png" />
+      <Resource Include="Images\IMages\x2\顶部两个logo.png" />
+      <Resource Include="Images\IMages\x2\首页（2人）字体说明.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Images\IMages\x2\首页（2人）预览效果.jpg" />
+      <Resource Include="Images\IMages\x4\中部两个logo.png" />
+      <Resource Include="Images\IMages\x4\实时数据.png" />
+      <Resource Include="Images\IMages\x4\成绩展示.png" />
+      <Resource Include="Images\IMages\x4\排名边框序号图标.png" />
+      <Resource Include="Images\IMages\x4\排名边框（已连接）.png" />
+      <Resource Include="Images\IMages\x4\排名边框（未连接）.png" />
+      <Resource Include="Images\IMages\x4\背景（已连接）.png" />
+      <Resource Include="Images\IMages\x4\顶部两个logo.png" />
+      <Resource Include="Images\IMages\x4\首页（4人）字体说明.png" />
+      <Resource Include="Images\IMages\x4\首页（4人）预览效果.jpg" />
+      <Resource Include="Images\IMages\x8\成绩展示.png" />
+      <Resource Include="Images\IMages\x8\排名边框（已连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（已连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（已连接）（第四列第一个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（已连接）（第四列第二个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（未连接）（正面）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（未连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（未连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（未连接）（第四列第一个）.png" />
+      <Resource Include="Images\IMages\x8\排名边框（未连接）（第四列第二个）.png" />
+      <Resource Include="Images\IMages\x8\背景（已连接）.png" />
+      <Resource Include="Images\IMages\x8\顶部两个logo.png" />
       <Resource Include="Images\x11.png" />
       <Resource Include="Images\x41.png" />
       <Resource Include="Images\xuhao.png" />
       <Resource Include="Images\zhongbulogo.png" />
       <Resource Include="Images\cjzs.png" />
       <Resource Include="Images\data.png" />
-      <None Remove="Images\20\b11.png" />
-      <Resource Include="Images\20\b11.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Resource Include="Resources\font\Adobe 黑体 Std R.otf">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Resource>
-      <None Remove="Images\20\b.png" />
-      <Resource Include="Images\20\b.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b12.png" />
-      <Resource Include="Images\20\b12.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b13.png" />
-      <Resource Include="Images\20\b13.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b14.png" />
-      <Resource Include="Images\20\b14.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b51.png" />
-      <Resource Include="Images\20\b51.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b52.png" />
-      <Resource Include="Images\20\b52.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\b53.png" />
-      <Resource Include="Images\20\b53.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x11.png" />
-      <Resource Include="Images\20\x11.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x.png" />
-      <Resource Include="Images\20\x.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x12.png" />
-      <Resource Include="Images\20\x12.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x13.png" />
-      <Resource Include="Images\20\x13.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x14.png" />
-      <Resource Include="Images\20\x14.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x51.png" />
-      <Resource Include="Images\20\x51.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x52.png" />
-      <Resource Include="Images\20\x52.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x53.png" />
-      <Resource Include="Images\20\x53.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Images\20\x54.png" />
-      <Resource Include="Images\20\x54.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Resources\font\Adobe 黑体 Std.otf" />
-      <Resource Include="Resources\font\Adobe 黑体 Std.otf">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
-      <None Remove="Resources\font\DS-DIGIT.TTF" />
-      <Resource Include="Resources\font\DS-DIGIT.TTF">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Resource Include="Resources\font\DS-Digital.TTF">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Resource>
       <None Remove="Resources\font\方正粗黑宋简体.ttf" />
       <Resource Include="Resources\font\方正粗黑宋简体.ttf">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
-      <None Remove="Resources\font\造字工房典黑粗体.otf" />
-      <Resource Include="Resources\font\造字工房典黑粗体.otf">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Resource>
       <None Remove="Resources\font\阿里巴巴普惠体 R.TTF" />
+      <Resource Include="Images\IMages\x20\排名边框序号图标（第五列第四个）.png" />
+      <Resource Include="Resources\font\造字工房典黑粗体.OTF" />
       <Resource Include="Resources\font\阿里巴巴普惠体 R.TTF">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Resources\font\msyh（微软雅黑）.ttc" />
+      <None Remove="Resources\font\msyh.ttc" />
+      <None Remove="Resources\font\SourceHanSansCN.otf" />
+      <Resource Include="Resources\font\SourceHanSansCN.otf" />
+      <None Remove="Images\IMages\x10\实时数据.png" />
+      <Resource Include="Images\IMages\x10\实时数据.png" />
+      <None Remove="Images\IMages\x10\成绩展示.png" />
+      <Resource Include="Images\IMages\x10\成绩展示.png" />
+      <None Remove="Images\IMages\x10\排名边框序号图标（正面）.png" />
+      <Resource Include="Images\IMages\x10\排名边框序号图标（正面）.png" />
+      <None Remove="Images\IMages\x10\排名边框序号图标（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框序号图标（第一列第一个）.png" />
+      <None Remove="Images\IMages\x10\排名边框序号图标（第四列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框序号图标（第四列第一个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（已连接）（正面）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（已连接）（正面）.png" />
+      <None Remove="Images\IMages\x10\排名边框（已连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（已连接）（第一列第一个）.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Images\IMages\x10\排名边框（已连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（已连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（已连接）（第四列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（已连接）（第四列第一个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（已连接）（第四列第二个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（已连接）（第四列第二个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（未连接）（正面）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（未连接）（正面）.png" />
+      <None Remove="Images\IMages\x10\排名边框（未连接）（第一列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（未连接）（第一列第一个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（未连接）（第一列第二个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（未连接）（第一列第二个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（未连接）（第四列第一个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（未连接）（第四列第一个）.png" />
+      <None Remove="Images\IMages\x10\排名边框（未连接）（第四列第二个）.png" />
+      <Resource Include="Images\IMages\x10\排名边框（未连接）（第四列第二个）.png" />
+      <None Remove="Images\IMages\x10\首页（10人）字体说明.jpg" />
+      <Resource Include="Images\IMages\x10\首页（10人）字体说明.jpg" />
+      <None Remove="Images\IMages\x10\首页（10人）预览效果.png" />
+      <Resource Include="Images\IMages\x10\首页（10人）预览效果.png" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Images\20\b54.png" />
-      <Resource Include="Images\50\b104.png" />
-      <Resource Include="Images\20\b54.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
+      <PackageReference Include="log4net" Version="2.0.16" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <Resource Include="ViewPage\纯背景.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ProjectionSccen.Core.Summer\ProjectionSccen.Core.Summer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\FontStyle\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\font\msyh.ttc" />
     </ItemGroup>
 
 </Project>

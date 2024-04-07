@@ -1,16 +1,18 @@
 ﻿using ProjectionSccen.Core.ViewModels;
 using System.Windows.Controls;
 
-namespace ProjectionSccen.Core.ViewPage;
-
-public partial class FourPeople : UserControl
+namespace ProjectionSccen.Core.ViewPage
 {
-    private FourPeopleViewModel viewModel;
 
-    public FourPeople()
+    public partial class FourPeople : UserControl
     {
-        InitializeComponent();
-        viewModel = new FourPeopleViewModel();
-        this.DataContext = viewModel;
+        private FourPeopleViewModel viewModel;
+
+        public FourPeople()
+        {
+            InitializeComponent();
+            viewModel = new FourPeopleViewModel();
+            this.DataContext = viewModel;
+        }
     }
 }

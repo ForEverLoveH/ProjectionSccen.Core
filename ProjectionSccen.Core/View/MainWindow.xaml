@@ -22,7 +22,9 @@
         <DataTemplate DataType="{x:Type viewModel:TwentyPeopleViewModel}">
             <pageView:TwentyPeople />
         </DataTemplate>
-        
+        <DataTemplate DataType="{x:Type viewModel:ThirdPeopleViewModel}">
+            <pageView:ThridtyPeople />
+        </DataTemplate>
         <DataTemplate DataType="{x:Type viewModel:FivetyPeopleViewModel}">
             <pageView:FivetyPeople />
         </DataTemplate>
@@ -38,8 +40,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="8*"></RowDefinition>
             <RowDefinition Height="12*"></RowDefinition>
-            <RowDefinition Height="64*"></RowDefinition>
-            <RowDefinition Height="16*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="27*"></ColumnDefinition>
@@ -49,27 +52,12 @@
         <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource '阿里巴巴普惠体 R'}"
                    FontSize="{Binding TitleFontLength }" Foreground="White" Text="{Binding GameTitle}" ></TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource DS-Digital}" FontSize="128.67" Foreground="White" Text="{Binding CurrentDateTime}" />
-        <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="2,0,0,0">
+        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource 方正粗黑宋简体}" FontSize=" 60" Foreground="White" Text="{Binding ProjectName}" />
+        <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="2,0,0,0">
             <DockPanel LastChildFill="True">
                 <ContentControl x:Name="content" Background="Transparent" Content="{Binding ViewModelContent}"></ContentControl>
             </DockPanel>
         </Grid>
-        <Grid Grid.Row="3" Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="45*"></ColumnDefinition>
-                <ColumnDefinition Width="10*"></ColumnDefinition>
-                <ColumnDefinition Width="45*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Button  Margin="2,2,2,2">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Images/data.png" Stretch="Uniform" ></ImageBrush>
-                </Button.Background>
-            </Button>
-            <Button Grid.Column="2" Margin="2,2,2,2" Command="{Binding RankingClickCommand}"  CommandParameter="{Binding ElementName=mainWindow}">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Images/cjzs.png" Stretch="Uniform" />
-                </Button.Background>
-            </Button>
-        </Grid>
+         
     </Grid>
 </Window>

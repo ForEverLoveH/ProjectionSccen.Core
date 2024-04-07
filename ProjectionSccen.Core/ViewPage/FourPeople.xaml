@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ProjectionSccen.Core.ViewPage"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Background="Transparent">
     <Grid Margin="2,2,2,2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20*"></ColumnDefinition>
@@ -24,7 +24,7 @@
             </Grid.RowDefinitions>
             <WrapPanel Grid.Row="1  " Grid.Column="1" Visibility="{Binding  IsLogo,Mode=TwoWay}">
                 <WrapPanel.Background>
-                    <ImageBrush ImageSource="/Images/zhongbulogo.png" Stretch="Uniform" />
+                    <ImageBrush ImageSource="/Images/IMages/x4/中部两个logo.png" Stretch="Uniform" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                 </WrapPanel.Background>
             </WrapPanel>
         </Grid>
@@ -43,7 +43,7 @@
         Grid.Column="0"
         Visibility="{Binding IsLogo, Mode=TwoWay}">
                 <WrapPanel.Background>
-                    <ImageBrush ImageSource=" /Images/zhongbulogo.png" Stretch="Uniform" />
+                    <ImageBrush ImageSource=" /Images/IMages/x4/中部两个logo.png" Stretch="Uniform"    TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                 </WrapPanel.Background>
             </WrapPanel>
         </Grid>
@@ -52,9 +52,7 @@
                 <RowDefinition Height="18*" />
                 <RowDefinition Height="82*" />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0   ">
-                <TextBlock x:Name="ProjectNameLabel"   FontSize="{Binding ProjectLen}" Text="{Binding ProjectName}" FontFamily="{StaticResource 方正粗黑宋简体}" HorizontalAlignment="Center" VerticalAlignment="Center"      Margin="2,2,2,2" Foreground="White"></TextBlock>
-            </Grid>
+             
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="10*" />
@@ -73,9 +71,9 @@
                 <Grid
         Grid.Row="1"
         Grid.Column="1"
-        Visibility="{Binding StudentDatas[0].visibility, Mode=TwoWay}">
+        Visibility="{Binding Students[0].visibility, Mode=TwoWay}">
                     <Grid.Background>
-                        <ImageBrush ImageSource="/Images/paimingbiankuang.png" />
+                        <ImageBrush ImageSource="/Images/IMages/x4/排名边框（已连接）.png" Stretch="Fill" TileMode="None" AlignmentX="Center" AlignmentY="Center"  />
                     </Grid.Background>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*" />
@@ -89,12 +87,12 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="1" Grid.Column="1">
                         <Grid.Background>
-                            <ImageBrush ImageSource="/Images/xuhao.png" />
+                            <ImageBrush ImageSource="/Images/IMages/x4/排名边框序号图标.png" Stretch="Uniform" TileMode="None" AlignmentX="Center" AlignmentY="Center"  />
                         </Grid.Background>
                         <TextBlock
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 方正粗黑宋简体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
                 Text="01" />
@@ -114,34 +112,34 @@
                 Grid.Row="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource  SH}"
                 FontSize="30"
                 Foreground="White"
-                Text="{Binding StudentDatas[0].Name, Mode=TwoWay}" />
+                Text="{Binding Students[0].Name, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="2"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="72"
                 Foreground="White"
-                Text="{Binding StudentDatas[0].Score, Mode=TwoWay}" />
+                Text="{Binding Students[0].Score, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="3"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="24"
                 Foreground="White"
-                Text="{Binding StudentDatas[0].School, Mode=TwoWay}" />
+                Text="{Binding Students[0].School  , Mode=TwoWay}" />
                     </Grid>
                 </Grid>
                 <Grid
         Grid.Row="1"
         Grid.Column="3"
-        Visibility="{Binding StudentDatas[2].visibility, Mode=TwoWay}">
+        Visibility="{Binding Students[1].visibility, Mode=TwoWay}">
                     <Grid.Background>
-                        <ImageBrush ImageSource="/Images/paimingbiankuang.png" />
+                        <ImageBrush ImageSource="/Images/IMages/x4/排名边框（已连接）.png"  Stretch="Fill" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                     </Grid.Background>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*" />
@@ -155,12 +153,12 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="1" Grid.Column="1">
                         <Grid.Background>
-                            <ImageBrush ImageSource="/Images/xuhao.png" />
+                            <ImageBrush ImageSource="/Images/IMages/x4/排名边框序号图标.png"  Stretch="Uniform" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                         </Grid.Background>
                         <TextBlock
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 方正粗黑宋简体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
                 Text="02" />
@@ -180,18 +178,18 @@
                 Grid.Row="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
-                Text="{Binding StudentDatas[2].Name, Mode=TwoWay}" />
+                Text="{Binding Students[1].Name, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="2"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="72"
                 Foreground="White"
-                Text="{Binding StudentDatas[2].Score, Mode=TwoWay}" />
+                Text="{Binding Students[1].Score, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="3"
                 HorizontalAlignment="Center"
@@ -199,15 +197,15 @@
                 FontFamily="{StaticResource 造字工房典黑粗体}"
                 FontSize="24"
                 Foreground="White"
-                Text="{Binding StudentDatas[2].School, Mode=TwoWay}" />
+                Text="{Binding Students[1].School, Mode=TwoWay}" />
                     </Grid>
                 </Grid>
                 <Grid
         Grid.Row="3"
         Grid.Column="1"
-        Visibility="{Binding StudentDatas[1].visibility, Mode=TwoWay}">
+        Visibility="{Binding Students[2].visibility, Mode=TwoWay}">
                     <Grid.Background>
-                        <ImageBrush ImageSource="/Images/paimingbiankuang.png" />
+                        <ImageBrush ImageSource="/Images/IMages/x4/排名边框（已连接）.png"  Stretch="Fill" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                     </Grid.Background>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*" />
@@ -221,12 +219,12 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="1" Grid.Column="1">
                         <Grid.Background>
-                            <ImageBrush ImageSource="/Images/xuhao.png" />
+                            <ImageBrush ImageSource="/Images/IMages/x4/排名边框序号图标.png"  Stretch="Uniform" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                         </Grid.Background>
                         <TextBlock
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 方正粗黑宋简体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
                 Text="03" />
@@ -246,34 +244,34 @@
                 Grid.Row="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
-                Text="{Binding StudentDatas[1].Name, Mode=TwoWay}" />
+                Text="{Binding Students[2].Name, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="2"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="72"
                 Foreground="White"
-                Text="{Binding StudentDatas[1].Score, Mode=TwoWay}" />
+                Text="{Binding Students[2].Score, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="3"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="24"
                 Foreground="White"
-                Text="{Binding StudentDatas[1].School, Mode=TwoWay}" />
+                Text="{Binding Students[2].School, Mode=TwoWay}" />
                     </Grid>
                 </Grid>
                 <Grid
         Grid.Row="3"
         Grid.Column="3"
-        Visibility="{Binding StudentDatas[3].visibility, Mode=TwoWay}">
+        Visibility="{Binding Students[3].visibility, Mode=TwoWay}">
                     <Grid.Background>
-                        <ImageBrush ImageSource="/Images/paimingbiankuang.png" />
+                        <ImageBrush ImageSource="/Images/IMages/x4/排名边框（已连接）.png"  Stretch="Fill" TileMode="None" AlignmentX="Center" AlignmentY="Center" />
                     </Grid.Background>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="5*" />
@@ -287,12 +285,12 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="1" Grid.Column="1">
                         <Grid.Background>
-                            <ImageBrush ImageSource="/Images/xuhao.png" />
+                            <ImageBrush ImageSource="/Images/IMages/x4/排名边框序号图标.png" Stretch="Uniform" TileMode="None" AlignmentX="Center" AlignmentY="Center"  />
                         </Grid.Background>
                         <TextBlock
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 方正粗黑宋简体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
                 Text="04" />
@@ -312,26 +310,26 @@
                 Grid.Row="1"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="30"
                 Foreground="White"
-                Text="{Binding StudentDatas[3]. Name, Mode=TwoWay}" />
+                Text="{Binding Students[3]. Name, Mode=TwoWay}" />
                         <TextBlock
                 Grid.Row="2"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="72"
                 Foreground="White"
-                Text="{Binding StudentDatas[3].Score, Mode=TwoWay}" />
+                Text="{Binding Students[3].Score, Mode=TwoWay}" />
                 <TextBlock
                 Grid.Row="3"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                FontFamily="{StaticResource 造字工房典黑粗体}"
+                FontFamily="{StaticResource SH}"
                 FontSize="24"
                 Foreground="White"
-                Text="{Binding StudentDatas[3].School, Mode=TwoWay}" />
+                Text="{Binding Students[3].School, Mode=TwoWay}" />
                     </Grid>
                 </Grid>
             </Grid>

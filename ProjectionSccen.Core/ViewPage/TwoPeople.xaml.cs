@@ -1,11 +1,11 @@
 ﻿using System.Windows.Controls;
+namespace ProjectionSccen.Core.ViewPage{
 
-namespace ProjectionSccen.Core.ViewPage;
-
-public partial class TwoPeople : UserControl
-{
-    public TwoPeople()
+    public partial class TwoPeople : UserControl
     {
-        InitializeComponent();
+        public TwoPeople()
+        {
+            InitializeComponent();
+        }
     }
 }

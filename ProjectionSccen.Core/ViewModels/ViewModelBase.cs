@@ -1,21 +1,23 @@
 ﻿using System.ComponentModel;
 
-namespace ProjectionSccen.Core.ViewModels;
-/// <summary>
-/// 
-/// </summary>
-public class ViewModelBase : INotifyPropertyChanged
-{   
+namespace ProjectionSccen.Core.ViewModels{
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="propertyName"></param>
-    protected virtual void OnPropertyChanged(string propertyName)
+    public class ViewModelBase : INotifyPropertyChanged
     {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="propertyName"></param>
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
-    /// <summary>
-    /// 
-    /// </summary>
-    public event PropertyChangedEventHandler? PropertyChanged;
 }

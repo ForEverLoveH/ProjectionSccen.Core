@@ -4,10 +4,12 @@
              xmlns:local="clr-namespace:ProjectionSccen.Core"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-            <FontFamily x:Key="Adobe 黑体 Std">/ProjectionSccen.Core;component/Resources/font/#Adobe 黑体 Std</FontFamily>
-            <FontFamily x:Key="DS-Digital">/ProjectionSccen.Core;component/Resources/font/#DS-DIGIT</FontFamily>
-            <FontFamily x:Key="阿里巴巴普惠体 R">/ProjectionSccen.Core;component/Resources/font/#阿里巴巴普惠体 R</FontFamily>
-            <FontFamily x:Key="方正粗黑宋简体">/ProjectionSccen.Core;component/Resources/font/#方正粗黑宋简体</FontFamily>
-            <FontFamily x:Key="造字工房典黑粗体">/ProjectionSccen.Core;component/Resources/font/#造字工房典黑粗体</FontFamily>
+        <FontFamily x:Key="Adobe 黑体 Std">/ProjectionSccen.Core;component/Resources/font/#Adobe 黑体 Std R</FontFamily>
+        <FontFamily x:Key="DS-Digital">/ProjectionSccen.Core;component/Resources/font/#DS-Digital</FontFamily>
+        <FontFamily x:Key="阿里巴巴普惠体 R">/ProjectionSccen.Core;component/Resources/font/#阿里巴巴普惠体 R</FontFamily>
+        <FontFamily x:Key="方正粗黑宋简体">/ProjectionSccen.Core;component/Resources/font/#方正粗黑宋简体</FontFamily>
+        <FontFamily x:Key="造字工房典黑粗体">/ProjectionSccen.Core;component/Resources/font/#造字工房典黑粗体</FontFamily>
+        <FontFamily x:Key="微软">>/ProjectionSccen.Core;component/Resources/font/#msyh</FontFamily>
+        <FontFamily x:Key="SH">>/ProjectionSccen.Core;commponent/Resources/font/#SourceHanSansCN</FontFamily>
     </Application.Resources>
 </Application>

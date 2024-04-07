@@ -5,8 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static ProjectionSccen.Core.Manager.NetControllerManager;
-
+ 
 namespace ProjectionSccen.Core.Models.NetModel
 {
     public class MessageHandle : Singleton<MessageHandle>
